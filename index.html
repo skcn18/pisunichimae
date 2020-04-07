@@ -3,26 +3,69 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="ぴすにちまえ,ぴす日前,フットサル">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="pictures/favicon.ico">
+    <link rel="apple-touch-icon" href="picture/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.photo').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+    
     <title>ぴすにちまえ</title>
 </head>
 <body>
-<!--header-->
+<!-- header -->
 <header>
     <h1 class="headline">
+        <img src="pictures/icon-36x36.png" alt="ロゴ" title="ロゴ">
         <a>ぴすにちまえ</a>
     </h1>
     <ul class="nav-list">
         <li class="nav-list-item">
             <a>Home</a>
         </li>
-        <li class="nav-list-item">Schedule</li>
-        <li class="nav-list-item">Attendance</li>
-        <li class="nav-list-item">Match Report</li>
-        <li class="nav-list-item">Training</li>
-        <li class="nav-list-item">Gallery</li>
+        <li class="nav-list-item">日程</li>
+        <li class="nav-list-item">試合結果</li>
+        <li class="nav-list-item">練習内容</li>
+        <li class="nav-list-item">ギャラリー</li>
     </ul>
 </header>
+<!-- photo -->
+<div class="photo-text"><h2>RECENT PHOTOS</h2></div>
+<div class="photo">
+    <img src="pictures/20191215/集合写真.jpg" alt="">
+    <img src="pictures/20191215/1.jpg" alt="">
+    <img src="pictures/20191215/2.jpg" alt="">
+    <img src="pictures/20191215/3.jpg" alt="">
+    <img src="pictures/20191215/4.jpg" alt="">
+    <img src="pictures/20191215/5.jpg" alt="">
+</div>
+<!-- nextgame -->
+<section class="nextgame">
+    <h2 class="section_title">NEXT GAME</h2>
+    <p class="nextgame_schedule">
+        <span class="day">4.19</span>
+        <span class="week">SUN</span>
+        <span class="time">12:00</span>
+        <span>KICK OFF</span>
+    </p>
+    <a href="http://sfa.fuga-futsal.com/" target="_blank" class="nextgame_place">すみだフットサルアリーナ</a>
+</section>
+<!-- video -->
+<div class="video-text"><h2>VIDEO</h2></div>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d9uEuObG_eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </body>
 </html>
