@@ -1,0 +1,59 @@
+body {
+    min-width: 320px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.teamLogo {
+}
+
+.teamLogo img {
+    width: 64px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.teamLogo p {
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.teamName {
+    display: inline;
+    vertical-align: middle;
+}
+.pageList {
+    zoom: 1;
+}
+
+.pageList:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    border-bottom: 1px solid #456729;
+    background: #1d4000;
+    box-shadow: 0 1px 1px #000;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+}
