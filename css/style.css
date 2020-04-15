@@ -1,59 +1,22 @@
-body {
-    min-width: 320px;
-    line-height: 1.5;
+header {
+    background-image: url(../pictures/header.png);
+    height: 155px;
+    text-align: center;
+    line-height: 155px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.teamLogo {
-}
-
-.teamLogo img {
+/* header img {
     width: 64px;
     height: auto;
     vertical-align: middle;
-}
-
-.teamLogo p {
-    font-size: 32px;
     display: inline-block;
-    vertical-align: middle;
-    
-}
+} */
 
-.teamName {
+header h1 a {
     display: inline;
     vertical-align: middle;
 }
-.pageList {
-    zoom: 1;
-}
 
-.pageList:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-nav {
-    border-bottom: 1px solid #456729;
-    background: #1d4000;
-    box-shadow: 0 1px 1px #000;
-    text-align: center;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    float: left;
-    width: 20%;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-shadow: 1px 1px 1px #000;
+header h1 a::before {
+    content: url(../pictures/team_logo.png);
 }
