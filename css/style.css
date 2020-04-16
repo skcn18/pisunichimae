@@ -1,16 +1,7 @@
 header {
     background-image: url(../pictures/header.png);
-    height: 155px;
     text-align: center;
-    line-height: 155px;
 }
-
-/* header img {
-    width: 64px;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-} */
 
 header h1 a {
     display: inline;
@@ -18,5 +9,40 @@ header h1 a {
 }
 
 header h1 a::before {
-    content: url(../pictures/team_logo.png);
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 66px;
+    background-image: url(../pictures/team_logo.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+nav {
+    /* font-size: 0; */
+    background-color: greenyellow;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+#contents {
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.text {
+    line-height: 2;
 }
