@@ -1,5 +1,15 @@
+body {
+    text-align: center;
+    background-color: #B4CF9E;
+}
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
-    background-image: url(../pictures/header.png);
+    /* background-image: url(../pictures/header.png); */
     text-align: center;
 }
 
@@ -45,4 +55,20 @@ nav li {
 
 .text {
     line-height: 2;
+}
+
+.movie {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; /* 現プレイヤーでは不要？ */
+    height: 0;
+    overflow: hidden;
+}
+ 
+.movie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
