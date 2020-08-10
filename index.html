@@ -6,39 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ぴすにちまえ</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 5000,
+                });
+            });
+    </script>
 </head>
 <body>
-<!-- header__start -->
-<header>
-    <div class="teamLogo">
-        <h1><a href-"#">ぴすにちまえ</a></h1>
-    </div>
-</header>
-<!-- header__end -->
-<nav>
-    <ul class="pageList">
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#">日程</a></li>
-        <li><a href="#">試合結果</a></li>
-        <li><a href="#">練習内容</a></li>
-        <li><a href="#">ギャラリー</a></li>
-    </ul>
-</nav>
-<div id="contents">
-    <div class="photo">
-        <img src="pictures/20191215.jpg" alt="">
+<div id="container">
+    <!-- header__start -->
+    <header>
+        <div class="teamLogo">
+            <h1><a href-"#">ぴすにちまえ</a></h1>
+        </div>
+    </header>
+    <!-- header__end -->
+    <nav>
+        <ul class="pageList">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">日程</a></li>
+            <li><a href="#">試合結果</a></li>
+            <li><a href="#">練習内容</a></li>
+            <li><a href="#">ギャラリー</a></li>
+        </ul>
+    </nav>
+    <div id="contents">
+        <div class="slider">
+            <img src="pictures/image1.jpg">
+            <img src="pictures/image2.jpg">
+            <img src="pictures/image3.jpg">
+        </div>
+        <p>■　MOTTO　■</p>
+        <div class="text">
+            <p>長く続くチームをモットーに楽しく活動しています。<br>
+                学生時代の経験者も未経験者もまぜこぜです。<br>
+                経年劣化する肉体を補うべく、<br>
+                頭を使ったチームプレーで大会優勝を目指しています。
+            </p>
+        </div>
+        <p>■　MOVIE　■</p>
+        <div class="movie">
+            <iframe src="https://www.youtube.com/embed/d9uEuObG_eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>■　TWITTER　■</p>
+        <div class="twitter">
+            <a data-width="1000" data-height="720" class="twitter-timeline" href="https://twitter.com/kskgroup2017?ref_src=twsrc%5Etfw">Tweets by kskgroup2017</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
 
-    <div class="text">
-        <p>長く続くチームをモットーに楽しく活動しています。<br>
-            学生時代の経験者も未経験者もまぜこぜです。<br>
-            経年劣化する肉体を補うべく、<br>
-            頭を使ったチームプレーで大会優勝を目指しています。</p>
-    </div>
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d9uEuObG_eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <footer>
+    </footer>
 </div>
-
-<footer>
-</footer>
 </body>
 </html>
